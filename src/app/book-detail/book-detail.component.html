@@ -1,0 +1,11 @@
+<p>book-detail works!</p>
+<div *ngIf="book">
+  <h3>{{book.name |  uppercase}}</h3>
+  <div><span>id:</span>{{book.id}}</div>
+  <div><span>name:</span>{{book.name}}</div>
+  <div>
+    <label for="name">Book name:</label>
+    <input id="name" [(ngModel)]="book.name" placeholder="name" >
+    <!--  モジュールのオプトインが必要 双方向データバインディング-->
+  </div>
+</div>
