@@ -6,26 +6,26 @@ import { BooksComponent } from './books/books.component';
 
 import { FormsModule} from '@angular/forms';
 import { BookDetailComponent } from './book-detail/book-detail.component';
+import { HttpClientComponent } from './http-client/http-client.component';
 
-// import { HttpClientModule } from '@angular/common/http';
-// import { HttpClientComponent } from './http-client/http-client.component';
+import { HttpClientModule } from '@angular/common/http';
 // import { HttpClientService } from './service/http-client.service';
-
+import { HttpClientService } from './http-client.service';
 
 @NgModule({
   declarations: [
     AppComponent,
     BooksComponent,
     BookDetailComponent,
-    // HttpClientComponent,
+    HttpClientComponent,
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    // HttpClientModule,
+    HttpClientModule,
   ],
   providers: [
-    // HttpClientService,
+    HttpClientService,
   ],
   bootstrap: [AppComponent]
 })
